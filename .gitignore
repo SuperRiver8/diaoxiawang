@@ -20,6 +20,5 @@ Thumbs.db
 # Temporary backup of the former nested repository
 .git-backup-*/
 
-# Customer source material and unrelated experiments are not part of sample1
+# Customer source material is not part of the frontend demo repositories
 client_source/
-sample2/

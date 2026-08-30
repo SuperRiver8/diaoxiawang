@@ -1,0 +1,15 @@
+{
+  "name": "釣蝦王・霓虹票券方案",
+  "short_name": "釣蝦王",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#140922",
+  "theme_color": "#140922",
+  "icons": [
+    {
+      "src": "/brand/shrimp-fishing-logo.jpg",
+      "sizes": "1080x1080",
+      "type": "image/jpeg"
+    }
+  ]
+}
