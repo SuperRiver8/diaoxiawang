@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+:root {
+  --purple: #6d3df5;
+  --orange: #ff7a1a;
+  --ink: #2d2042;
+  --paper: #f8f6fb;
+}
+* {
+  box-sizing: border-box;
+  border-color: rgb(45 32 66 / 0.11);
+}
+html {
+  min-width: 320px;
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family:
+    "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+::selection {
+  background: rgb(109 61 245 / 0.2);
+}
+
+.admin-card {
+  border: 1px solid rgb(45 32 66 / 0.09);
+  border-radius: 1.25rem;
+  background: white;
+  box-shadow: 0 10px 35px rgb(45 32 66 / 0.045);
+}
+.admin-input {
+  min-height: 2.75rem;
+  min-width: 0;
+  width: 100%;
+  border: 1px solid rgb(45 32 66 / 0.15);
+  border-radius: 0.75rem;
+  background: white;
+  padding: 0.65rem 0.85rem;
+  outline: none;
+}
+.admin-input::placeholder {
+  color: #a69cac;
+  opacity: 1;
+}
+.admin-input-with-icon {
+  padding-left: 2.75rem;
+}
+.admin-input:focus {
+  border-color: var(--purple);
+  box-shadow: 0 0 0 3px rgb(109 61 245 / 0.1);
+}
+.admin-label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #63566f;
+}
+.admin-button {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  background: var(--purple);
+  padding: 0.65rem 1rem;
+  color: white;
+  font-weight: 800;
+}
+.admin-button:hover {
+  background: #5930d3;
+}
+.admin-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.rich-editor:empty::before {
+  color: #a69cac;
+  content: attr(data-placeholder);
+  pointer-events: none;
+}
+.rich-editor h2 {
+  margin: 0.75rem 0 0.35rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+.rich-editor ul {
+  margin: 0.5rem 0;
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+.rich-editor a {
+  color: var(--purple);
+  text-decoration: underline;
+}

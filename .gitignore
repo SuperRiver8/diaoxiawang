@@ -1,0 +1,25 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and local tooling
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Temporary backup of the former nested repository
+.git-backup-*/
+
+# Customer source material and unrelated experiments are not part of sample1
+client_source/
+sample2/

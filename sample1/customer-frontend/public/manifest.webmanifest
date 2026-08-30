@@ -1,0 +1,15 @@
+{
+  "name": "釣蝦王 Shrimp Fishing",
+  "short_name": "釣蝦王",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff8f1",
+  "theme_color": "#2d2042",
+  "icons": [
+    {
+      "src": "/brand/shrimp-fishing-logo.jpg",
+      "sizes": "1080x1080",
+      "type": "image/jpeg"
+    }
+  ]
+}
